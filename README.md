@@ -9,7 +9,7 @@
     * [spring自定义controller接口扫描规则.md](note/java/spring自定义controller接口扫描规则.md)
     * [加密算法笔记.md](note/java/加密算法笔记.md)
   * [others](note/others)
-    * [ELK 笔记.md](note/others/ELK 笔记.md)
+    * [ELK笔记.md](note/others/ELK笔记.md)
     * [FastDFS笔记.md](note/others/FastDFS笔记.md)
   * [python](note/python)
   * [shell](note/shell)
