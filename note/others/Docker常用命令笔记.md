@@ -1,5 +1,5 @@
 ### 根据Dockerfile构建镜像
-docker build -t <tag-name> .
+docker build -t \<tag-name\> .
 > tag-name表示镜像名称，如docker build -t oujh/eureka-server .；.表示Dockerfile在当前目录下
 
 ### 查看目前在运行的容器
@@ -9,7 +9,7 @@ docker ps
 docker images
 
 ### 运行容器
-docker run -p <主机(宿主)端口>:<容器端口> -d <tag-name>
+docker run -p <主机(宿主)端口>:<容器端口> -d \<tag-name\>
 > 如：docker run -p 8761:8761 -d oujh/eureka-server
 
 ### 进入容器并打开bash界面，可以执行命令
