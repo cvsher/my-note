@@ -1,6 +1,8 @@
 ### 根据Dockerfile构建镜像
 docker build -t \<tag-name\> .
-> tag-name表示镜像名称，如docker build -t oujh/eureka-server .；.表示Dockerfile在当前目录下
+> tag-name表示镜像名称，如docker build -t oujh/eureka-server .；.表示上下文路径为当前目录，Docker默认从上下文中读取Dockerfile。
+>Docker build构建时，Docker客户端会将上下文路径打包通过Rest Api发送给Docker引擎，Docker引擎在上下文路径中获取构建镜像必要的文件
+>例如 COPY指令的目标文件就是根据上下文路径的相对路径指定，因此上下文路径应该只包含构建镜像所必须的文件，以减少上传到Docker引擎的数据大小。
 
 ### 查看目前在运行的容器
 docker ps
